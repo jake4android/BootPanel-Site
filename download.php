@@ -6,7 +6,7 @@
 				<center>
 					<h1>Download BootPanel</h1>
 					<p>
-						<a class="btn btn-lg btn-primary" href="download/0001/BootPanel.zip" role="button">Build #0001</a>
+						<a class="btn btn-lg btn-primary" href="https://github.com/BootPanel/BootPanel/archive/master.zip" role="button">Download ZIP</a>
 					</p>
 				</center>
 			</div>
