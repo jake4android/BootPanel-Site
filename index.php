@@ -108,38 +108,46 @@ require 'conf/config.php';
 				if(isset($_GET['about']) && empty($_GET['about'])) {?>
 					<div class="container marketing">
 						<div class="row">
+							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>About BootPanel</h2>
 								<p>BootPanel is a free, open source server control panel.  It has an extensive API to allow Themes and Plugins to do almost anything.  The BootPanel software has many features including Server Statistics, File Management, MySQL Management, One-Click Plugin Installation, and more!</p>
 							</div><!-- /.col-lg-4 -->
+							<div class="col-lg-4"></div>
 						</div>
 					</div>
 		<?php 	} elseif(isset($_GET['contact']) && empty($_GET['contact'])) { ?>
 					<div class="container marketing">
 						<div class="row">
+							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>Contact Us</h2>
 								<p>The Contact form is currently unavailable.</p>
 							</div><!-- /.col-lg-4 -->
+							<div class="col-lg-4"></div>
 						</div>
 					</div>
 		<?php	} elseif(isset($_GET['api']) && empty($_GET['api'])) { ?>
 					<div class="container marketing">
 						<div class="row">
+							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>BootPanel API</h2>
 								<p>The BootPanel API reference is currently unavailable.</p>
 							</div><!-- /.col-lg-4 -->
+							<div class="col-lg-4"></div>
 						</div>
 					</div>
 		<?php	} elseif(isset($_GET['download']) && empty($_GET['download'])) { ?>
 					<div class="container marketing">
 						<div class="row">
+							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>Download BootPanel</h2>
 								<a class="btn btn-lg btn-default" href="https://github.com/BootPanel/BootPanel/archive/master.zip">Download ZIP</a>
 								<a class="btn btn-lg btn-default disabled">Download RPM</a>
 							</div><!-- /.col-lg-4 -->
+							<div class="col-lg-4"></div>
 						</div>
 					</div>
 		<?php	} else { ?>
@@ -173,7 +181,7 @@ require 'conf/config.php';
 		<?php } ?>
 
 			<footer>
-				<p class="pull-right">&copy; 2014 BootPanel</p>
+				<p class="pull-right">&copy; 2014 BootPanel  </p>
 			</footer>
 		</div>
 
