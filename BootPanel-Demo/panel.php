@@ -4,6 +4,10 @@ ob_start();
 	require 'lib/assets/includes/header.php';
 	$combination = "0000"; //DO NOT CHANGE THIS!!!
 	
+		if(isset($_GET['submit'])) {
+			echo '<center><p class="alert alert-warning">You can not do that in the demo version!</p></center>';
+		}
+	
 		if(isset($_GET['file_created']) && empty($_GET['file_created'])) {
 			echo '<center><p class="alert alert-success">File created successfully!</p></center>';
 		}
