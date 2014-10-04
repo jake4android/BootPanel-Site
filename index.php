@@ -183,7 +183,7 @@ require 'conf/config.php';
 		<?php } ?>
 
 			<footer>
-				<p class="pull-right">&copy; 2014 BootPanel  </p>
+				<p class="text-muted" align="right">&copy; 2014 BootPanel</p>
 			</footer>
 		</div>
 
