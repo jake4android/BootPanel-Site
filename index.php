@@ -174,10 +174,12 @@ require 'conf/config.php';
 						</div>
 		<?php	}
 			  } else { ?>
+			  	<div class="col-lg-4"></div>
 				<div class="col-lg-4">
 					<h2>Under Maintenance!</h2>
 					<p>The site is currently undergoing maintenance.  Your browser will check to is if the website has gone public automatically every 5 seconds.</p>
 				</div>
+				<div class="col-lg-4"></div>
 		<?php } ?>
 
 			<footer>

@@ -1,3 +1,3 @@
 <?php
-	$Maintenance_Mode = true;
+	$Maintenance_Mode = false;
 ?>
