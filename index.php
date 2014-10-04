@@ -169,7 +169,7 @@ require 'conf/config.php';
 								<!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;"> -->
 								<h2>Simple</h2>
 								<p>BootPanel has a simple, user friendly interface to allow you to control your server with ease.</p>
-								<p><a class="btn btn-default disabled" href="/BootPanel-Demo" role="button">View Demo</a></p>
+								<p><a class="btn btn-default" href="/BootPanel-Demo" role="button">View Demo</a></p>
 							</div>
 						</div>
 		<?php	}
