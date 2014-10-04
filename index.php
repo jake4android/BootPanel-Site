@@ -144,7 +144,7 @@ require 'conf/config.php';
 							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>Download BootPanel</h2>
-								<a class="btn btn-lg btn-default" href="https://github.com/BootPanel/BootPanel/archive/master.zip">Download ZIP</a>
+								<a class="btn btn-lg btn-default" href="https://github.com/BootPanel/BootPanel/archive/master.zip">Download ZIP</a></br></br>
 								<a class="btn btn-lg btn-default disabled">Download RPM</a>
 							</div><!-- /.col-lg-4 -->
 							<div class="col-lg-4"></div>
