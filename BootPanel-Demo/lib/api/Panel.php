@@ -124,7 +124,7 @@
 			Panel::endModal();
 			Panel::startModal("deleteFile", "File Management");
 				foreach(glob("../*") as $file) {
-					if($file != "../BootPanel")
+					if($file != "../BootPanel-Demo")
 						echo '<center><a class="btn btn-primary disabled">' . str_replace("../", "", $file) . '</a></center></br>';
 				}
 			Panel::endModal();
@@ -150,7 +150,7 @@
 						<li class="active"><a>Download</a></li>
 					  </ul></br>';
 				foreach (glob("../*") as $file) {
-					if($file != "../BootPanel") {
+					if($file != "../BootPanel-Demo") {
 						echo '<center><a class="btn btn-primary disabled"> '. str_replace("../", "", $file) .' </a></center></br>';
 					}
 				}
