@@ -103,7 +103,7 @@ require 'conf/config.php';
 			<a class="left carousel-control" href="#bootpanel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 			<a class="right carousel-control" href="#bootpanel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div><!-- /.carousel -->
-
+		
 		<?php if(!$Maintenance_Mode) { 
 				if(isset($_GET['about']) && empty($_GET['about'])) {?>
 					<div class="container marketing">
@@ -122,23 +122,152 @@ require 'conf/config.php';
 							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
 								<h2>Contact Us</h2>
-								<p>The Contact form is currently unavailable.</p>
+								<form class="form-signin" role="form" action="./" method="post">
+									<input class="form-control" type="text" name="name" placeholder="Name" required autofocus>
+									<input class="form-control" type="email" name="email" placeholder="Email" required>
+									<input class="form-control" type="text" name="subject" placeholder="Subject" required>
+									<textarea class="form-control" type="text" name="message" placeholder="Message" required></textarea>
+								</form>
 							</div><!-- /.col-lg-4 -->
 							<div class="col-lg-4"></div>
 						</div>
 					</div>
-		<?php	} elseif(isset($_GET['api']) && empty($_GET['api'])) { ?>
-					<div class="container marketing">
-						<div class="row">
-							<div class="col-lg-4"></div>
-							<div class="col-lg-4">
-								<h2>BootPanel API</h2>
-								<p>The BootPanel API reference is currently unavailable.</p>
-							</div><!-- /.col-lg-4 -->
-							<div class="col-lg-4"></div>
+		<?php	} elseif(isset($_GET['api'])) { 
+					if(empty($_GET['api'])) { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>BootPanel API</h2>
+										<p>
+											<b><u>Please Choose An API Reference</u></b></br>
+											<a class="btn btn-lg btn-default" href="./?api=Design">Design API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Glyphicon">Glyphicon API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Limit">Limit API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Login">Login API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Panel">Panel API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Plugin">Plugin API</a></br></br>
+											<a class="btn btn-lg btn-default disabled" href="./?api=Stats">Statistics API</a>
+										</p>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
 						</div>
-					</div>
-		<?php	} elseif(isset($_GET['download']) && empty($_GET['download'])) { ?>
+		<?php		} elseif($_GET['api'] == "Design") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Design API</h2>
+										<p class="alert alert warning">All calls to the Design API should begin with <code>Design::</code></p>
+										<p>To being the HTML header in your theme use <code>startHead()</code></p>
+										<p>End the HTML header with <code>endHead()</code></p>
+										<p>You can set the Panels title with <code>setTitle($title)</code> (NOTE: This function MUST be in the header)</p>
+										<p>Set the Panels favicon with <code>setIconFromFile($theme, $file)</code> or <code>setIconFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
+										<p>Load your Themes CSS with <code>loadCSSFromFile($theme, $file)</code> or <code>loadCSSFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
+										<p>You can import files for use with <code>includeFromFile($theme, $file)</code> or <code>includeFromURL($url)</code></p>
+										<p>To being the HTML body in your theme use <code>startBody()</code></p>
+										<p>End the HTML header with <code>endBody()</code></p>
+										<p>You can create badges or notifications using <code>createBadge($content)</code></p>
+										<p>Create a callout with <code>addCallout($type, $name, $text)</code></p>
+										<p>You can create badges or notifications using <code>createBadge($content)</code></p>
+										<p>Make a progress bar with <code>addProgressBar($type, $percent, $active)</code> ($active is a boolean and false by default)</p>
+										<p>Load a Glyphicon with <code>useGlyphicon($glyphicon)</code></p>
+										<p>Center your content with <code>startCenter()</code></p>
+										<p>Stop centering content with <code>endCenter()</code></p>
+										<p>You can start a footer with <code>startFoot()</code></p>
+										<p>End your footer tag with <code>endFoot()</code></p>
+										<p>You can create copyright tags using <code>setTag($text)</code></p>
+										<p>Load a JavaScript file with <code>loadJSFromFile($theme, $file)</code> or <code>loadJSFromURL($url)</code></p>
+										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Design.php">HERE</a></p>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+						
+		<?php 		} elseif($_GET['api'] == "Glyphicon") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Glyphicon API</h2>
+										<p class="alert alert-danger">For this API to work, your Theme MUST have Glyphicons installed.</p>
+										<p class="alert alert-warning">To show a Glyphicon, use <code>Design::useGlyphicon($glyphicon);</code></p>
+										<p class="alert alert-warning">All calls to the Glyphicon API should begin with <code>Glyphicon::</code></p>
+										<p><code>asterisk()</code> will return the <span class="glyphicon glyphicon-asterisk"></span> Glyphicon Class Code</p>
+										<p><code>plus()</code> will return the <span class="glyphicon glyphicon-plus"></span> Glyphicon Class Code</p>
+										<p><code>euro()</code> will return the <span class="glyphicon glyphicon-euro"></span> Glyphicon Class Code</p>
+										<p><code>minus()</code> will return the <span class="glyphicon glyphicon-minus"></span> Glyphicon Class Code</p>
+										<p><code>cloud()</code> will return the <span class="glyphicon glyphicon-cloud"></span> Glyphicon Class Code</p>
+										<p><code>envelope()</code> will return the <span class="glyphicon glyphicon-envelope"></span> Glyphicon Class Code</p>
+										<p><code>pencil()</code> will return the <span class="glyphicon glyphicon-pencil"></span> Glyphicon Class Code</p>
+										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php"></p>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} elseif($_GET['api'] == "Limit") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Limit API</h2>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} elseif($_GET['api'] == "Login") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Login API</h2>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} elseif($_GET['api'] == "Panel") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Panel API</h2>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} elseif($_GET['api'] == "Plugin") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Plugin API</h2>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} elseif($_GET['api'] == "Stats") { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<h2>Stats API</h2>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		} else { ?>
+						<div class="container marketing">
+							<div class="row">
+								<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+										<p>The API Documentation you requested is currently unavailable or is invalid.</p>
+									</div><!-- /.col-lg-4 -->
+								<div class="col-lg-4"></div>
+							</div>
+						</div>
+		<?php		}
+				} elseif(isset($_GET['download']) && empty($_GET['download'])) { ?>
 					<div class="container marketing">
 						<div class="row">
 							<div class="col-lg-4"></div>
