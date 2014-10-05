@@ -56,8 +56,8 @@ require 'conf/config.php';
 								<li><a href="./forums">Forums</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="http://GitHub.com/BootPanel">GitHub</a></li>
-								<li><a href="http://Twitter.com/BootPanelHelp">Twitter</a></li>
+								<li><a href="http://GitHub.com/BootPanel" target="_blank">GitHub</a></li>
+								<li><a href="http://Twitter.com/BootPanelHelp" target="_blank">Twitter</a></li>
 							</ul>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ require 'conf/config.php';
 										<p>End your footer tag with <code>endFoot()</code></p>
 										<p>You can create copyright tags using <code>setTag($text)</code></p>
 										<p>Load a JavaScript file with <code>loadJSFromFile($theme, $file)</code> or <code>loadJSFromURL($url)</code></p>
-										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Design.php">HERE</a></p>
+										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Design.php" target="_blank">HERE</a></p>
 									</div><!-- /.col-lg-4 -->
 								<div class="col-lg-4"></div>
 							</div>
@@ -206,7 +206,7 @@ require 'conf/config.php';
 										<p><code>cloud()</code> will return the <span class="glyphicon glyphicon-cloud"></span> Glyphicon Class Code</p>
 										<p><code>envelope()</code> will return the <span class="glyphicon glyphicon-envelope"></span> Glyphicon Class Code</p>
 										<p><code>pencil()</code> will return the <span class="glyphicon glyphicon-pencil"></span> Glyphicon Class Code</p>
-										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php">HERE</a></p>
+										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php" target="_blank">HERE</a></p>
 									</div><!-- /.col-lg-4 -->
 								<div class="col-lg-4"></div>
 							</div>
@@ -303,7 +303,7 @@ require 'conf/config.php';
 								<!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;"> -->
 								<h2>Simple</h2>
 								<p>BootPanel has a simple, user friendly interface to allow you to control your server with ease.</p>
-								<p><a class="btn btn-default" href="/BootPanel-Demo" role="button">View Demo</a></p>
+								<p><a class="btn btn-default" href="/BootPanel-Demo" role="button" target="_blank">View Demo</a></p>
 							</div>
 						</div>
 		<?php	}
