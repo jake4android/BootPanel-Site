@@ -53,6 +53,11 @@ require 'conf/config.php';
 								<li><a href="./?contact">Contact</a></li>
 								<li><a href="./?api">API</a></li>
 								<li><a href="./?download">Download</a></li>
+								<li><a href="./forums">Forums</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="http://GitHub.com/BootPanel">GitHub</a></li>
+								<li><a href="http://Twitter.com/BootPanelHelp">Twitter</a></li>
 							</ul>
 						</div>
 					</div>
