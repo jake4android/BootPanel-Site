@@ -201,7 +201,7 @@ require 'conf/config.php';
 										<p><code>cloud()</code> will return the <span class="glyphicon glyphicon-cloud"></span> Glyphicon Class Code</p>
 										<p><code>envelope()</code> will return the <span class="glyphicon glyphicon-envelope"></span> Glyphicon Class Code</p>
 										<p><code>pencil()</code> will return the <span class="glyphicon glyphicon-pencil"></span> Glyphicon Class Code</p>
-										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php"></p>
+										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php">HERE</a></p>
 									</div><!-- /.col-lg-4 -->
 								<div class="col-lg-4"></div>
 							</div>
