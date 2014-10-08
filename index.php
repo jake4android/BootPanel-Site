@@ -233,31 +233,31 @@ require 'conf/config.php';
 		<?php		} elseif($_GET['api'] == "Panel") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Panel API</h2>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+								</p>
 							</div>
 						</div>
 		<?php		} elseif($_GET['api'] == "Plugin") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Plugin API</h2>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+								</p>
 							</div>
 						</div>
 		<?php		} elseif($_GET['api'] == "Stats") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Stats API</h2>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+								</p>
 							</div>
 						</div>
 		<?php		} else { ?>
