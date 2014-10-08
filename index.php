@@ -109,9 +109,9 @@ require 'conf/config.php';
 			<a class="right carousel-control" href="#bootpanel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div><!-- /.carousel -->
 		
+		<div class="container marketing">
 		<?php if(!$Maintenance_Mode) { 
 				if(isset($_GET['about']) && empty($_GET['about'])) {?>
-					<div class="container marketing">
 						<div class="row">
 							<div class="col-lg-4"></div>
 							<div class="col-lg-4">
@@ -147,7 +147,7 @@ require 'conf/config.php';
 										<p>
 											<b><u>Please Choose An API Reference</u></b></br>
 											<a class="btn btn-lg btn-default" href="./?api=Design">Design API</a></br></br>
-											<a class="btn btn-lg btn-default disabled" href="./?api=Glyphicon">Glyphicon API</a></br></br>
+											<a class="btn btn-lg btn-default" href="./?api=Glyphicon">Glyphicon API</a></br></br>
 											<a class="btn btn-lg btn-default disabled" href="./?api=Limit">Limit API</a></br></br>
 											<a class="btn btn-lg btn-default disabled" href="./?api=Login">Login API</a></br></br>
 											<a class="btn btn-lg btn-default disabled" href="./?api=Panel">Panel API</a></br></br>
@@ -161,74 +161,74 @@ require 'conf/config.php';
 		<?php		} elseif($_GET['api'] == "Design") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Design API</h2>
-										<p class="alert alert warning">All calls to the Design API should begin with <code>Design::</code></p>
-										<p>To being the HTML header in your theme use <code>startHead()</code></p>
-										<p>End the HTML header with <code>endHead()</code></p>
-										<p>You can set the Panels title with <code>setTitle($title)</code> (NOTE: This function MUST be in the header)</p>
-										<p>Set the Panels favicon with <code>setIconFromFile($theme, $file)</code> or <code>setIconFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
-										<p>Load your Themes CSS with <code>loadCSSFromFile($theme, $file)</code> or <code>loadCSSFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
-										<p>You can import files for use with <code>includeFromFile($theme, $file)</code> or <code>includeFromURL($url)</code></p>
-										<p>To being the HTML body in your theme use <code>startBody()</code></p>
-										<p>End the HTML header with <code>endBody()</code></p>
-										<p>You can create badges or notifications using <code>createBadge($content)</code></p>
-										<p>Create a callout with <code>addCallout($type, $name, $text)</code></p>
-										<p>You can create badges or notifications using <code>createBadge($content)</code></p>
-										<p>Make a progress bar with <code>addProgressBar($type, $percent, $active)</code> ($active is a boolean and false by default)</p>
-										<p>Load a Glyphicon with <code>useGlyphicon($glyphicon)</code></p>
-										<p>Center your content with <code>startCenter()</code></p>
-										<p>Stop centering content with <code>endCenter()</code></p>
-										<p>You can start a footer with <code>startFoot()</code></p>
-										<p>End your footer tag with <code>endFoot()</code></p>
-										<p>You can create copyright tags using <code>setTag($text)</code></p>
-										<p>Load a JavaScript file with <code>loadJSFromFile($theme, $file)</code> or <code>loadJSFromURL($url)</code></p>
-										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Design.php" target="_blank">HERE</a></p>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+										<p class="alert alert-warning">All calls to the Design API should begin with <code>Design::</code></p>
+									</center>
+									<p>To being the HTML header in your theme use <code>startHead()</code></p>
+									<p>End the HTML header with <code>endHead()</code></p>
+									<p>You can set the Panels title with <code>setTitle($title)</code> (NOTE: This function MUST be in the header)</p>
+									<p>Set the Panels favicon with <code>setIconFromFile($theme, $file)</code> or <code>setIconFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
+									<p>Load your Themes CSS with <code>loadCSSFromFile($theme, $file)</code> or <code>loadCSSFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
+									<p>You can import files for use with <code>includeFromFile($theme, $file)</code> or <code>includeFromURL($url)</code></p>
+									<p>To being the HTML body in your theme use <code>startBody()</code></p>
+									<p>End the HTML header with <code>endBody()</code></p>
+									<p>You can create badges or notifications using <code>createBadge($content)</code></p>
+									<p>Create a callout with <code>addCallout($type, $name, $text)</code></p>
+									<p>You can create badges or notifications using <code>createBadge($content)</code></p>
+									<p>Make a progress bar with <code>addProgressBar($type, $percent, $active)</code> ($active is a boolean and false by default)</p>
+									<p>Load a Glyphicon with <code>useGlyphicon($glyphicon)</code></p>
+									<p>Center your content with <code>startCenter()</code></p>
+									<p>Stop centering content with <code>endCenter()</code></p>
+									<p>You can start a footer with <code>startFoot()</code></p>
+									<p>End your footer tag with <code>endFoot()</code></p>
+									<p>You can create copyright tags using <code>setTag($text)</code></p>
+									<p>Load a JavaScript file with <code>loadJSFromFile($theme, $file)</code> or <code>loadJSFromURL($url)</code></p>
+									<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Design.php" target="_blank">HERE</a></p>
+								</p>
 							</div>
 						</div>
 						
 		<?php 		} elseif($_GET['api'] == "Glyphicon") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Glyphicon API</h2>
 										<p class="alert alert-danger">For this API to work, your Theme MUST have Glyphicons installed.</p>
 										<p class="alert alert-warning">To show a Glyphicon, use <code>Design::useGlyphicon($glyphicon);</code></p>
 										<p class="alert alert-warning">All calls to the Glyphicon API should begin with <code>Glyphicon::</code></p>
-										<p><code>asterisk()</code> will return the <span class="glyphicon glyphicon-asterisk"></span> Glyphicon Class Code</p>
-										<p><code>plus()</code> will return the <span class="glyphicon glyphicon-plus"></span> Glyphicon Class Code</p>
-										<p><code>euro()</code> will return the <span class="glyphicon glyphicon-euro"></span> Glyphicon Class Code</p>
-										<p><code>minus()</code> will return the <span class="glyphicon glyphicon-minus"></span> Glyphicon Class Code</p>
-										<p><code>cloud()</code> will return the <span class="glyphicon glyphicon-cloud"></span> Glyphicon Class Code</p>
-										<p><code>envelope()</code> will return the <span class="glyphicon glyphicon-envelope"></span> Glyphicon Class Code</p>
-										<p><code>pencil()</code> will return the <span class="glyphicon glyphicon-pencil"></span> Glyphicon Class Code</p>
-										<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php" target="_blank">HERE</a></p>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+									<p><code>asterisk()</code> will return the <span class="glyphicon glyphicon-asterisk"></span> Glyphicon Class Code</p>
+									<p><code>plus()</code> will return the <span class="glyphicon glyphicon-plus"></span> Glyphicon Class Code</p>
+									<p><code>euro()</code> will return the <span class="glyphicon glyphicon-euro"></span> Glyphicon Class Code</p>
+									<p><code>minus()</code> will return the <span class="glyphicon glyphicon-minus"></span> Glyphicon Class Code</p>
+									<p><code>cloud()</code> will return the <span class="glyphicon glyphicon-cloud"></span> Glyphicon Class Code</p>
+									<p><code>envelope()</code> will return the <span class="glyphicon glyphicon-envelope"></span> Glyphicon Class Code</p>
+									<p><code>pencil()</code> will return the <span class="glyphicon glyphicon-pencil"></span> Glyphicon Class Code</p>
+									<p>You can view the entire file <a href="http://github.com/BootPanel/BootPanel/blob/master/lib/api/Glyphicon.php" target="_blank">HERE</a></p>
+								</p>
 							</div>
 						</div>
 		<?php		} elseif($_GET['api'] == "Limit") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Limit API</h2>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+								</p>
 							</div>
 						</div>
 		<?php		} elseif($_GET['api'] == "Login") { ?>
 						<div class="container marketing">
 							<div class="row">
-								<div class="col-lg-4"></div>
-									<div class="col-lg-4">
+								<p>
+									<center>
 										<h2>Login API</h2>
-									</div><!-- /.col-lg-4 -->
-								<div class="col-lg-4"></div>
+									</center>
+								</p>
 							</div>
 						</div>
 		<?php		} elseif($_GET['api'] == "Panel") { ?>
@@ -303,17 +303,19 @@ require 'conf/config.php';
 								<!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;"> -->
 								<h2>Simple</h2>
 								<p>BootPanel has a simple, user friendly interface to allow you to control your server with ease.</p>
-								<p><a class="btn btn-default" href="/BootPanel-Demo" role="button" target="_blank">View Demo</a></p>
+								<p><a class="btn btn-default" href="./BootPanel-Demo" role="button" target="_blank">View Demo</a></p>
 							</div>
 						</div>
 		<?php	}
 			  } else { ?>
-			  	<div class="col-lg-4"></div>
-				<div class="col-lg-4">
-					<h2>Under Maintenance!</h2>
-					<p>The site is currently undergoing maintenance.  Your browser will check to is if the website has gone public automatically every 5 seconds.</p>
+			  	<div class="container marketing">
+			  		<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2><center>Under Maintenance!</center></h2>
+							<center><p>The site is currently undergoing maintenance.  Your browser will check to is if the website has gone public automatically every 5 seconds.</p></center>
+						</div>
+					<div class="col-lg-4"></div>
 				</div>
-				<div class="col-lg-4"></div>
 		<?php } ?>
 
 			<footer>
