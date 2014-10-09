@@ -165,17 +165,16 @@ require 'conf/config.php';
 										<h2>Design API</h2>
 										<p class="alert alert-warning">All calls to the Design API should begin with <code>Design::</code></p>
 									</center>
-									<p>To being the HTML header in your theme use <code>startHead()</code></p>
+									<p>To begin the HTML header in your theme use <code>startHead()</code></p>
 									<p>End the HTML header with <code>endHead()</code></p>
 									<p>You can set the Panels title with <code>setTitle($title)</code> (NOTE: This function MUST be in the header)</p>
 									<p>Set the Panels favicon with <code>setIconFromFile($theme, $file)</code> or <code>setIconFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
 									<p>Load your Themes CSS with <code>loadCSSFromFile($theme, $file)</code> or <code>loadCSSFromURL($url)</code> (NOTE: This function MUST be in the header)</p>
 									<p>You can import files for use with <code>includeFromFile($theme, $file)</code> or <code>includeFromURL($url)</code></p>
-									<p>To being the HTML body in your theme use <code>startBody()</code></p>
+									<p>To begin the HTML body in your theme use <code>startBody()</code></p>
 									<p>End the HTML header with <code>endBody()</code></p>
 									<p>You can create badges or notifications using <code>createBadge($content)</code></p>
 									<p>Create a callout with <code>addCallout($type, $name, $text)</code></p>
-									<p>You can create badges or notifications using <code>createBadge($content)</code></p>
 									<p>Make a progress bar with <code>addProgressBar($type, $percent, $active)</code> ($active is a boolean and false by default)</p>
 									<p>Load a Glyphicon with <code>useGlyphicon($glyphicon)</code></p>
 									<p>Center your content with <code>startCenter()</code></p>
