@@ -291,10 +291,10 @@ require 'conf/config.php';
 								<hr>
 								<h3><u>ZIP Installation</u></h3>
 								<p>
-									Step 1) Click the "Download ZIP" button <a href="./?download">HERE</a>
-									Step 2) Extract the ZIP file and rename "BootPanel-master" to "BootPanel"
-									Step 3) If needed, move the "BootPanel" directory into your Apache Web Server Directory
-									Step 4) Go to YourDomain.com/BootPanel (Where YourDomain.com is the URL to your Apache Web Server)
+									Step 1) Click the "Download ZIP" button <a href="./?download">HERE</a></br>
+									Step 2) Extract the ZIP file and rename "BootPanel-master" to "BootPanel"</br>
+									Step 3) If needed, move the "BootPanel" directory into your Apache Web Server Directory</br>
+									Step 4) Go to YourDomain.com/BootPanel (Where YourDomain.com is the URL to your Apache Web Server)</br>
 								</p>
 								<hr>
 								<h3><u>RPM Installation</u></h3>
