@@ -278,8 +278,29 @@ require 'conf/config.php';
 								<h2>Download BootPanel</h2>
 								<a class="btn btn-lg btn-default" href="https://github.com/BootPanel/BootPanel/archive/master.zip">Download ZIP</a></br></br>
 								<a class="btn btn-lg btn-default disabled">Download RPM</a>
+								<hr>
+								<a class="btn btn-lg btn-default" href="./?install">Installation Help</a>
 							</div><!-- /.col-lg-4 -->
 							<div class="col-lg-4"></div>
+						</div>
+					</div>
+		<?php	} elseif(isset($_GET['install']) && empty($_GET['install'])) { ?>
+					<div class="container marketing">
+						<div class="row">
+							<center><h2>Install Help</h2></center>
+								<hr>
+								<h3><u>ZIP Installation</u></h3>
+								<p>
+									Step 1) Click the "Download ZIP" button <a href="./?download">HERE</a>
+									Step 2) Extract the ZIP file and rename "BootPanel-master" to "BootPanel"
+									Step 3) If needed, move the "BootPanel" directory into your Apache Web Server Directory
+									Step 4) Go to YourDomain.com/BootPanel (Where YourDomain.com is the URL to your Apache Web Server)
+								</p>
+								<hr>
+								<h3><u>RPM Installation</u></h3>
+								<p>
+									There is currently no Installation available via RPM
+								</p>
 						</div>
 					</div>
 		<?php	} else { ?>
